@@ -6,16 +6,16 @@ public class exponents{
         int num = scan.nextInt();
         System.out.println("Exponent?");
         int exp = scan.nextInt();
-        System.out.println(imgonnamakethismethodnamesuperlongsonobodycancopiouslystealmylabs(num, exp, num));
+        System.out.println(exponentiate(num, exp, num));
         scan.close();
     }
-    public static int imgonnamakethismethodnamesuperlongsonobodycancopiouslystealmylabs(int a, int b, int c){
+    public static int exponentiate(int a, int b, int c){
         b--;
         if (b == 0){
             return(a);
         }
         else{
-            return imgonnamakethismethodnamesuperlongsonobodycancopiouslystealmylabs(a*c, b, c);
+            return exponentiate(a*c, b, c);
         }
     }
 }
